@@ -1,5 +1,4 @@
 - name: Kubernetes hello world
-  hosts: all
   tasks:
     - name: Check pod under default namespace
       kubernetes.core.k8s_info:
