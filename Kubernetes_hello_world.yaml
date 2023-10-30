@@ -1,0 +1,11 @@
+- name: Kubernetes hello world
+  hosts: all
+  tasks:
+    - name: Check pod under default namespace
+      kubernetes.core.k8s_info:
+        kind: Pod
+      register: pod_list
+
+    - name: Display registered output
+      debug:
+        var: pod_list
