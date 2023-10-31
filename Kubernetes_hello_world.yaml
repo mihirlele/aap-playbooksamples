@@ -6,6 +6,4 @@
         kind: Pod
       register: pod_list
 
-    - name: Display registered output
-      debug:
-        var: pod_list
+
