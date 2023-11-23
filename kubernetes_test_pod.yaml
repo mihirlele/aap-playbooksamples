@@ -9,10 +9,10 @@
           kind: Pod
           name: test-pod
           spec:
-        containers:
-        - name: test-pod
-          image: registry.redhat.io/rhel7:latest
-          imagePullPolicy: IfNotPresent
-          args:
-          - sleep
-          - "2000"
+            containers:
+            - name: test-pod
+              image: registry.redhat.io/rhel7:latest
+              imagePullPolicy: IfNotPresent
+              args:
+              - sleep
+              - "2000"
