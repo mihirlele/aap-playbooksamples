@@ -4,6 +4,7 @@
     - name: Check pod under default namespace
       kubernetes.core.k8s_info:
         kind: Pod
+        namespace: default
       register: pod_list
 
     - name: Display registered output
