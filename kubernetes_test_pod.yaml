@@ -3,12 +3,12 @@
   tasks:
     - name: Create a test pod
       kubernetes.core.k8s:
+        namespace: default
         state: present
         definition:
           apiVersion: v1
           kind: Pod
           name: test-pod
-          namespace: default
           spec:
             containers:
             - name: test-pod
